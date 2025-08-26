@@ -8,7 +8,7 @@ if (saldoMedioMensal <= 1000) {
   tarifa = 25.00;
 } else if (saldoMedioMensal <= 2000) {
   tarifa = 20.00;
-} else if (saldoMedioMensal <= 3500) {
+} else if (saldoMedioMensal <= 3500) { 
   tarifa = 13.00;
 } else {
   tarifa = 0.00;
