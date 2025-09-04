@@ -1,7 +1,7 @@
 const consumoMedio = 12.5; 
-const precoLitro = 6.44;
+const precoLitro = 8.0;
 const tempoDeViagem = 4; 
-const velocidadeMedia = 100; 
+const velocidadeMedia = 400; 
 let distanciaPercorrida = velocidadeMedia * tempoDeViagem;
 let quantidadeDeLitros = distanciaPercorrida / consumoMedio;
 let custo = quantidadeDeLitros * precoLitro;
