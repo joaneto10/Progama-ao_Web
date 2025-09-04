@@ -1,7 +1,7 @@
-// Ex 6: Posto de combustível - cálculo do valor a pagar
 
-const opcao = 3;        // 1 - Álcool | 2 - Diesel | 3 - Gasolina
-const litros = 40;      // quantidade em litros
+
+const opcao = 3;        
+const litros = 40;      
 
 let precoLitro;
 let combustivel;

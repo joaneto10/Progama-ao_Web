@@ -1,8 +1,7 @@
-// Ex 2: Preço final de um carro com opcionais
 
-const precoFabrica = 50000.00; // valor inicial informado
+const precoFabrica = 50000.00; 
 
-// opções (S ou N)
+
 const arCondicionado = "S";
 const pinturaMetalica = "N";
 const vidroEletrico = "S";

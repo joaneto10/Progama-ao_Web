@@ -1,4 +1,4 @@
-// Ex 3: Verificar tipo de triângulo
+
 
 const valorA = 10;
 const valorB = 10;

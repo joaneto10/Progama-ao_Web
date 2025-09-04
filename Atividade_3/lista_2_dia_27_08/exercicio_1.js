@@ -1,6 +1,6 @@
-// Ex 1: Verificar se um número é quadrado perfeito
 
-const numero = 144; // teste aqui com qualquer número inteiro positivo
+
+const numero = 144; 
 
 const raiz = Math.sqrt(numero);
 

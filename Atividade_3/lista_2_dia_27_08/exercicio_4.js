@@ -1,7 +1,7 @@
-// Ex 4: Conversão de Reais para moeda estrangeira
 
-const valorReais = 1000.00; // valor em R$ a converter
-const opcao = 2; // 1-Euro | 2-Libra Esterlina | 3-Dólar
+
+const valorReais = 1000.00; 
+const opcao = 2; 
 
 let convertido;
 let moeda;

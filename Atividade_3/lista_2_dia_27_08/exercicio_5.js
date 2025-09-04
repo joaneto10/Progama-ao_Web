@@ -1,7 +1,7 @@
-// Ex 5: Cálculo do valor a pagar conforme condição de pagamento
 
-const precoEtiqueta = 1000.00; // valor original
-const codigo = 4; // condição escolhida (1 a 4)
+
+const precoEtiqueta = 1000.00;
+const codigo = 4; 
 
 let valorFinal;
 
