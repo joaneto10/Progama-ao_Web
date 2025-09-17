@@ -25,3 +25,4 @@ console.log(
     ? `${figura}:\nVolume = ${volume.toFixed(2)}\nÁrea da superfície = ${area.toFixed(2)}`
     : "Opção inválida!"
 );
+5
