@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversor de Moedas</title>
+</head>
+<body>
+
+    <h1>Conversor de Reais para Outras Moedas</h1>
+
+    <form>
+        <label for="valorReais">Digite o valor em Reais (R$):</label>
+        <input type="number" id="valorReais" name="valorReais" step="0.01" min="0" required>
+        <br><br>
+
+        <label for="moedaDestino">Selecione a moeda de destino:</label>
+        <select id="moedaDestino" name="moedaDestino" required>
+            <option value="1">1. Euro (R$ 5,418)</option>
+            <option value="2">2. Libra Esterlina (R$ 6,336)</option>
+            <option value="3">3. Dólar (R$ 5,189)</option>
+        </select>
+        <br><br>
+
+        <button type="button" onclick="converterMoeda()">Converter</button>
+    </form>
+
+    <h2 id="resultado"></h2>
+
+    <script src="conversor.js"></script>
+
+</body>
+</html>

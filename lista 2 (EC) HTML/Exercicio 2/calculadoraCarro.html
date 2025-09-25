@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Preço de Carro</title>
+</head>
+<body>
+
+    <h1>Calculadora de Preço de Carro</h1>
+
+    <form>
+        <label for="precoFabrica">Preço Inicial de Fábrica (R$):</label>
+        <input type="number" id="precoFabrica" name="precoFabrica" step="0.01" min="0" required>
+        <br><br>
+
+        <h3>Opções:</h3>
+        <input type="checkbox" id="arCondicionado" name="arCondicionado">
+        <label for="arCondicionado">Ar Condicionado (R$ 1.750,00)</label><br>
+
+        <input type="checkbox" id="pinturaMetalica" name="pinturaMetalica">
+        <label for="pinturaMetalica">Pintura Metálica (R$ 800,00)</label><br>
+
+        <input type="checkbox" id="vidroEletrico" name="vidroEletrico">
+        <label for="vidroEletrico">Vidro Elétrico (R$ 1.200,00)</label><br>
+
+        <input type="checkbox" id="direcaoHidraulica" name="direcaoHidraulica">
+        <label for="direcaoHidraulica">Direção Hidráulica (R$ 2.000,00)</label><br>
+
+        <br>
+        <button type="button" onclick="calcularPrecoFinal()">Calcular Preço Final</button>
+    </form>
+
+    <h2 id="resultado"></h2>
+
+    <script src="calculo.js"></script>
+
+</body>
+</html>
