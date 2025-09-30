@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Exercício 3</title>
+  <script src="ex3.js" defer></script>
+</head>
+<body>
+  <h2>Exercício 3 — Volume e Área</h2>
+  <label>Figura:
+    <select id="figura">
+      <option value="1">Cone Reto</option>
+      <option value="2">Cilindro</option>
+      <option value="3">Esfera</option>
+    </select>
+  </label><br>
+  <label>Raio (r): <input type="number" id="raio" step="0.01"></label><br>
+  <label>Altura (h): <input type="number" id="altura" step="0.01"></label><br>
+  <button onclick="calcular()">Calcular</button>
+  <p id="resultado"></p>
+  <script src="js/ex3.js"></script>
+</body>
+</html>

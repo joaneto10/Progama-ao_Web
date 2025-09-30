@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Exercício 5</title>
+  <script src="ex5.js" defer></script>
+</head>
+<body>
+  <h2>Exercício 5 — Loja Vende Tudo</h2>
+  <label>Cor da etiqueta:
+    <select id="cor">
+      <option value="">--Selecione--</option>
+      <option>Verde</option>
+      <option>Amarelo</option>
+    </select>
+  </label><br><br>
+  <label>Quantidade: <input type="number" id="quantidade"></label><br>
+  <label>Valor unitário: <input type="number" id="valorUnitario" step="0.01"></label><br>
+  <button onclick="calcular()">Calcular</button>
+  <p id="resultado"></p>
+  <script src="js/ex5.js"></script>
+</body>
+</html>
