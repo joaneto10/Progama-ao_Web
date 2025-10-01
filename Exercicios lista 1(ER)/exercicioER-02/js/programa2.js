@@ -1,21 +1,17 @@
-
-const numero = document.getElementById("idInNumeroIntPos");
 const resultado = document.getElementById("idOnResultado");
 
-function calcularDivisoresWhile(numero) {
-    let texto = "Divisores:\n";
-    let i = 1;
-    while (i <= numero) {
-        if (numero % i === 0) {
-            texto += i + "\n";
-        }
-        i++;
+function calculoSeno() {
+    let texto ="";
+    let a = 0.0;
+    while(a <= 3.0) {
+        let seno = a - (Math.pow(a, 3) / 6) + (Math.pow(a, 5) / 120) - (Math.pow(a, 7) / 5040);
+        texto += a + "=" + seno + "\n";
+        a += 0.5;
     }
     return texto;
 }
 
-function eventoBtnCalcularDivisores() {
-    const numeroN = Number(numero.value);
-    const valorFinal = calcularDivisoresWhile(numeroN);
+function eventoBtnCalcularSeno() {
+    const valorFinal = calculoSeno();
     resultado.innerText = valorFinal;
 }
