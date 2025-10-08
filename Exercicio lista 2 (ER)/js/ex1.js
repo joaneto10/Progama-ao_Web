@@ -7,13 +7,12 @@ function verificarPerfeito() {
   }
 
   let soma = 0;
-  let i = 1;
+  let i;
 
-  while (i < n) {
+  for (i = 1; i < n; i++) {
     if (n % i === 0) {
       soma += i;
     }
-    i++;
   }
 
   if (soma === n) {
