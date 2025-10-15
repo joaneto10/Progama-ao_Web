@@ -1,4 +1,3 @@
-// === Função 1 - Verificar Número Perfeito ===
 function verificarPerfeito() {
   const n = parseInt(document.getElementById("numero").value);
 
@@ -86,6 +85,31 @@ function verificarTriangular() {
 }
 
 
+function verificarPrimo() {
+  const n = parseInt(document.getElementById("numero").value);
+
+  if (isNaN(n) || n <= 1) {
+    alert("Digite um número inteiro maior que 1.");
+    return;
+  }
+
+  let ehPrimo = true;
+
+  for (let i = 2; i <= Math.sqrt(n); i++) {
+    if (n % i === 0) {
+      ehPrimo = false;
+      break;
+    }
+  }
+
+  if (ehPrimo) {
+    document.getElementById("resultado").innerHTML = `${n} é um número primo.`;
+  } else {
+    document.getElementById("resultado").innerHTML = `${n} não é um número primo.`;
+  }
+}
+
+
 function executar() {
   const opcao = document.getElementById("opcao").value;
   document.getElementById("resultado").innerHTML = "";
@@ -98,5 +122,7 @@ function executar() {
     calcularFatorial();
   } else if (opcao === "triangular") {
     verificarTriangular();
+  } else if (opcao === "primo") {
+    verificarPrimo();
   }
 }
