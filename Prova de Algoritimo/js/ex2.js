@@ -1,4 +1,4 @@
-// Função que calcula o quociente usando apenas subtrações
+
 function quociente(num1, num2) {
     let q = 0;
     let restante = num1;
@@ -10,7 +10,6 @@ function quociente(num1, num2) {
     return q;
 }
 
-// Função que calcula o resto usando apenas subtrações
 function resto(num1, num2) {
     let restante = num1;
 
@@ -20,7 +19,6 @@ function resto(num1, num2) {
     return restante;
 }
 
-// Função principal chamada pelo botão
 function calcular() {
     let num1 = parseInt(document.getElementById('num1').value);
     let num2 = parseInt(document.getElementById('num2').value);

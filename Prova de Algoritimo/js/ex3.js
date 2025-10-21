@@ -1,4 +1,4 @@
-// Função que calcula a raiz quadrada aproximada usando subtração de ímpares consecutivos
+
 function raizQuadrada(num) {
     if (num <= 0) return 0;
 
@@ -8,14 +8,13 @@ function raizQuadrada(num) {
 
     while (restante >= impar) {
         restante -= impar;
-        impar += 2; // próximo número ímpar
+        impar += 2; 
         contador++;
     }
 
     return { raiz: contador, restante: restante };
 }
 
-// Função chamada pelo botão
 function calcularRaiz() {
     let numero = parseInt(document.getElementById('numero').value);
     let resultado = document.getElementById('resultado');
