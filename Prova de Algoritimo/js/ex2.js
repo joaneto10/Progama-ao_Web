@@ -1,36 +1,39 @@
 
-function quociente(num1, num2) {
-    let q = 0;
-    let restante = num1;
+function calcularQuociente(dividendo, divisor) {
+  let quociente = 0;
+  let resto = dividendo;
 
-    while (restante >= num2) {
-        restante -= num2;
-        q++;
-    }
-    return q;
+  while (resto >= divisor) {
+    resto -= divisor;
+    quociente++;
+  }
+
+  return quociente;
 }
 
-function resto(num1, num2) {
-    let restante = num1;
+function calcularResto(dividendo, divisor) {
+  let resto = dividendo;
 
-    while (restante >= num2) {
-        restante -= num2;
-    }
-    return restante;
+  while (resto >= divisor) {
+    resto -= divisor;
+  }
+
+  return resto;
 }
 
+    
 function calcular() {
-    let num1 = parseInt(document.getElementById('num1').value);
-    let num2 = parseInt(document.getElementById('num2').value);
-    let resultado = document.getElementById('resultado');
+  const num1 = parseInt(document.getElementById('num1').value);
+  const num2 = parseInt(document.getElementById('num2').value);
+  const resultado = document.getElementById('resultado');
 
-    if (num1 <= 0 || num2 <= 0 || isNaN(num1) || isNaN(num2)) {
-        resultado.textContent = "Digite números inteiros positivos válidos!";
-        return;
-    }
+  if (isNaN(num1) || isNaN(num2) || num1 <= 0 || num2 <= 0) {
+    resultado.textContent = "Digite números inteiros positivos válidos!";
+    return;
+  }
 
-    let q = quociente(num1, num2);
-    let r = resto(num1, num2);
+  const quociente = calcularQuociente(num1, num2);
+  const resto = calcularResto(num1, num2);
 
-    resultado.textContent = `Quociente(${num1}, ${num2}) = ${q}, Resto(${num1}, ${num2}) = ${r}`;
+  resultado.textContent = `Quociente(${num1}, ${num2}) = ${quociente}, Resto(${num1}, ${num2}) = ${resto}`;
 }
