@@ -2,7 +2,6 @@ const labelArrays = document.getElementById('outArray');
 const outFatorial = document.getElementById('outFatorial');
 
 function geraNumeroAleatorio() {
-  // números menores para evitar estouro no fatorial
   return Math.floor(Math.random() * 10) + 1;
 }
 

@@ -14,14 +14,18 @@ function obterConjuntoAleatorio() {
 }
 
 function inverterNumero(num) {
-  return parseInt(num.toString().split('').reverse().join(''));
+  let invertido = 0;
+  while (num > 0) {
+    invertido = invertido * 10 + (num % 10);
+    num = Math.floor(num / 10);
+  }
+  return invertido;
 }
 
 function onButtonGerar() {
   const vetor = obterConjuntoAleatorio();
   labelArrays.textContent = 'Array: ' + vetor.join(', ');
 
-  
   outInvertidos.innerHTML = '';
 
   vetor.forEach((num, i) => {
